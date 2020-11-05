@@ -2,7 +2,7 @@
 import convert, { ElementCompact } from 'xml-js';
 import fetch from "node-fetch";
 
-enum LG_HANDLE {
+export enum LG_HANDLE {
     LG_HANDLE_KEY_INPUT = 'HandleKeyInput',
     LG_HANDLE_MOUSE_MOVE = 'HandleTouchMove',
     LG_HANDLE_MOUSE_CLICK = 'HandleTouchClick',
@@ -10,7 +10,7 @@ enum LG_HANDLE {
     LG_HANDLE_CHANNEL_CHANGE = 'HandleChannelChange'
 }
 
-enum LG_COMMAND {
+export enum LG_COMMAND {
     POWER = 1,
     NUMBER_0 = 2,
     NUMBER_1 = 3,
@@ -77,7 +77,7 @@ enum LG_COMMAND {
     APPS = 417
 }
 
-enum LG_QUERY {
+export enum LG_QUERY {
     CUR_CHANNEL = 'cur_channel',
     CHANNEL_LIST = 'channel_list',
     CONTEXT_UI = 'context_ui',
@@ -86,7 +86,7 @@ enum LG_QUERY {
     IS_3D = 'is_3d',
 }
 
-interface Channel {
+export interface Channel {
     chtype: string; // terrestrial
     sourceIndex: string; // '1'
     physicalNum: string; // '25'
@@ -142,7 +142,7 @@ const xml_options = {
  * host has to include a valid port number. By default LG TVs use 8080 so make sure to specify that
  * eg. 192.168.1.3:8080
  */
-class NetcastClient {
+export class NetcastClient {
     host: string;
 
     constructor(host: string) {
