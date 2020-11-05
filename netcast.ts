@@ -104,9 +104,6 @@ export interface Channel {
     inputSourceIdx?: string,
 }
 
-const payload = { 'target': 'volume_info' }
-const url = "http://192.168.1.6:8080/roap/api/"
-
 const removeJsonTextAttribute = function (value, parentElement) {
     try {
         const parentOfParent = parentElement._parent;
@@ -174,7 +171,7 @@ export class NetcastClient {
      * @param payload Payload & (GET) parameters to send
      */
     async send_to_tv(message_type, message = null, payload = null): Promise<object> {
-        const request_url = new URL(url + message_type);
+        const request_url = new URL(`${this.host}/roap/api` + message_type);
         let res;
         if (message !== null) {
             // get_session(undefined);
