@@ -326,8 +326,10 @@ export class NetcastClient {
 
     /**
      * Retrieves the current channel information from the TV
+     *
+     * @param      {string}  session  The session
      */
-    async get_current_channel(): Promise<Channel> {
+    async get_current_channel(session: string): Promise<Channel> {
         const res: any = await this.query_data(LG_QUERY.CUR_CHANNEL);
         return res.data;
     }

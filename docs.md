@@ -21,7 +21,7 @@ eg. 192.168.1.3:8080</p>
     * [.query_data(query)](#NetcastClient+query_data)
     * [.send_command(command, session)](#NetcastClient+send_command)
     * [.change_channel(channel, session)](#NetcastClient+change_channel)
-    * [.get_current_channel()](#NetcastClient+get_current_channel)
+    * [.get_current_channel(session)](#NetcastClient+get_current_channel)
 
 <a name="new_NetcastClient_new"></a>
 
@@ -119,7 +119,12 @@ access_token of the TV To get the access_token, use <code>display_pair_code()</c
 
 <a name="NetcastClient+get_current_channel"></a>
 
-### netcastClient.get\_current\_channel()
+### netcastClient.get\_current\_channel(session)
 <p>Retrieves the current channel information from the TV</p>
 
 **Kind**: instance method of [<code>NetcastClient</code>](#NetcastClient)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| session | <code>string</code> | <p>The session</p> |
+
