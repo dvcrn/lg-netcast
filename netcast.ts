@@ -246,9 +246,9 @@ class NetcastClient {
     };
 
     /**
-    /* Sends the given command to the TV
-    /* To issue commands, you need a valid session id. To retrieve that, use `get_session()` paired with the access_token of the TV
-    /* To get the access_token, use `display_pair_code()`
+     * Sends the given command to the TV
+     * To issue commands, you need a valid session id. To retrieve that, use `get_session()` paired with the access_token of the TV
+     * To get the access_token, use `display_pair_code()`
      * 
      * @param command The command to send, see LG_COMMAND type
      * @param session Session id

@@ -75,9 +75,9 @@ Will return a javascript object with the result, or throw an exception</p>
 <a name="NetcastClient+send_command"></a>
 
 ### netcastClient.send\_command(command, session)
-<p>/* Sends the given command to the TV
-/* To issue commands, you need a valid session id. To retrieve that, use <code>get_session()</code> paired with the access_token of the TV
-/* To get the access_token, use <code>display_pair_code()</code></p>
+<p>Sends the given command to the TV
+To issue commands, you need a valid session id. To retrieve that, use <code>get_session()</code> paired with the access_token of the TV
+To get the access_token, use <code>display_pair_code()</code></p>
 
 **Kind**: instance method of [<code>NetcastClient</code>](#NetcastClient)  
 
