@@ -22,6 +22,7 @@
     "jsdoc-to-markdown": "^6.0.1"
   },
   "scripts": {
-    "build:doc": "jsdoc2md --files *.ts --configure ./jsdoc2md.json > ./docs.md"
+    "build:doc": "jsdoc2md --files *.ts --configure ./jsdoc2md.json > ./docs.md",
+    "build": "tsc"
   }
 }

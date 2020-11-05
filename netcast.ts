@@ -232,7 +232,7 @@ export class NetcastClient {
             }
         }, { compact: true });
 
-        const res = await this.send_to_tv("auth", authcmd);
+        const res:any = await this.send_to_tv("auth", authcmd);
         return res.session;
     };
 
@@ -274,7 +274,7 @@ export class NetcastClient {
     /**
      * Retrieves the current channel information from the TV 
      */
-    async get_current_channel(): Promise<Channel> {
+    async get_current_channel(): Promise<object> {
         return await this.query_data(LG_QUERY.CUR_CHANNEL);
     }
 }
