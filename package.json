@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "axios": "^0.21.0",
     "node-fetch": "^2.6.1",
     "tslint": "^6.1.3",
     "typescript": "^4.0.5",
@@ -12,5 +11,6 @@
   "main": "dist/netcast.js",
   "repository": "https://github.com/dvcrn/lg-netcast",
   "author": "David Mohl <git@davemail.io>",
-  "license": "MIT"
+  "license": "MIT",
+  "types": "dist/netcast.d.ts"
 }
