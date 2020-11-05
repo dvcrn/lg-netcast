@@ -4,7 +4,7 @@
     "xml-js": "^1.6.11"
   },
   "name": "lg-netcast",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Node package to interact with LG netcast TVs (2012, 2013)",
   "main": "dist/netcast.js",
   "repository": "https://github.com/dvcrn/lg-netcast",
