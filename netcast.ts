@@ -171,7 +171,7 @@ export class NetcastClient {
      * @param payload Payload & (GET) parameters to send
      */
     async send_to_tv(message_type, message = null, payload = null): Promise<object> {
-        const request_url = new URL(`${this.host}/roap/api/` + message_type);
+        const request_url = new URL(`http://${this.host}/roap/api/` + message_type);
         let res;
         if (message !== null) {
             // get_session(undefined);
