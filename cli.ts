@@ -14,8 +14,8 @@ const command_mapping = {
         const client = new NetcastClient(flags.get('host'));
 
         try {
-            await client.get_session(flags.get('access_token'));
-            console.log(await client.get_current_channel());
+            const session = await client.get_session(flags.get('access_token'));
+            console.log(await client.get_current_channel(session));
         } catch (error) {
             console.log('Error from TV: ', error);
         }
