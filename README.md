@@ -8,7 +8,7 @@ Netcast client written in js/ts
 npm install lg-netcast
 ```
 
-## Usage 
+## Usage Example
 
 Initialize the client with the API host. By default the port is `:8080`, make sure you add that to your API_HOST
 
@@ -21,6 +21,8 @@ client.get_session(access_token).then(async (session_id) => {
     console.log(cur_channel)
 });
 ```
+
+Check the [API docs](./docs.md) for general usage on this package
 
 ## Authentication
 
