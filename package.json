@@ -5,5 +5,12 @@
     "tslint": "^6.1.3",
     "typescript": "^4.0.5",
     "xml-js": "^1.6.11"
-  }
+  },
+  "name": "lg-netcast",
+  "version": "1.0.0",
+  "description": "Node package to interact with LG netcast TVs (2012, 2013)",
+  "main": "dist/netcast.js",
+  "repository": "https://github.com/dvcrn/lg-netcast",
+  "author": "David Mohl <git@davemail.io>",
+  "license": "MIT"
 }
