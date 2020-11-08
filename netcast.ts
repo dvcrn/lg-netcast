@@ -140,6 +140,7 @@ const xml_options = {
  */
 interface Options {
     timeout: number;
+    hoge?: string;
 }
 
 /**
@@ -189,7 +190,7 @@ export class NetcastClient {
                     value: command,
                 },
             },
-            { compact: true }
+            { compact: true },
         );
     }
 
@@ -254,8 +255,8 @@ export class NetcastClient {
                         type: 'AuthKeyReq',
                     },
                 },
-                { compact: true }
-            )
+                { compact: true },
+            ),
         );
     }
 
@@ -278,7 +279,7 @@ export class NetcastClient {
                     value: access_token,
                 },
             },
-            { compact: true }
+            { compact: true },
         );
 
         const res: any = await this.send_to_tv('auth', authcmd);
@@ -307,7 +308,6 @@ export class NetcastClient {
      */
     async send_command(command: LG_COMMAND, session: string) {
         const xmlcmd = this.wrap_command(LG_HANDLE.LG_HANDLE_KEY_INPUT, command, session);
-        console.log(xmlcmd);
         return this.send_to_tv('command', xmlcmd);
     }
 
@@ -320,7 +320,6 @@ export class NetcastClient {
      */
     async change_channel(channel: Channel, session: string) {
         const xmlcmd = this.wrap_command(LG_HANDLE.LG_HANDLE_CHANNEL_CHANGE, channel, session);
-        console.log(xmlcmd);
         return this.send_to_tv('command', xmlcmd);
     }
 
